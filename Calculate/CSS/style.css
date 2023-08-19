@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+::selection{
+    color: #000;
+    background-color: #FFF5EC;
+}
+body{
+    overflow: hidden;
+}
+.data{
+    height: 350px;
+    max-width: 298px;
+    min-width:  280px;
+    background-color: #e9e9e949;
+    margin-left: 50px;
+    border-radius: 4%;
+    border-top-left-radius: 10%;
+    box-shadow: inset 0px -64px 0px 0px #747474f2, inset 0px -64px 0px 0px #FFF5EC;
+    filter: blur(50%);
+}
+
+.data h1{
+    font-size: 19px;
+    font-weight: 800;
+    padding: 30px 50px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 0px 0px 1px #00000076;
+    
+}
+.data p{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 9px 6px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 0px 2px #989898;
+    color:#131313;;
+    
+}
+.data span p{
+    font-size: 9px;
+    font-weight: 500;
+    padding: 2px 50px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    
+}
+.icons{
+    height: 50px;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    
+}
+.icons img{
+    height: 25px;
+    cursor: pointer;
+    filter:invert(1);
+    opacity: 80%;
+    transition: all 0.28s ;
+    margin: 10px;
+    
+}
+.icons img:hover{
+    opacity: 60%;
+    transform: rotate(0deg);
+    
+}
+.icons img:active{
+    box-shadow: 0px 0px 0px 10px #beb6b6, 0px 0px 0px 30px #86898684;
+    opacity: 60%;
+    transform: rotate(15deg);
+    border-radius: 50%;
+    
+}
+.abs{
+    position: absolute;
+    left: 0px;
+    height: 501px;
+    width: 100%;
+    z-index: -1;
+    top: 123px;
+    opacity: 10%;
+    filter: invert(10%) sepia(21%) saturate(6088%) hue-rotate(259deg) brightness(93%) contrast(134%);
+}
+#plus{
+    position: absolute;
+    top: 19px;
+    left: 298px;
+    height: 130px;
+    transition: all 0.25s;
+    animation: p cubic-bezier(0.83, 1.13, 0.37, 0.21) infinite 7s;
+}
+@keyframes p {
+    0%{
+        top: 19px;
+        left: 298px;
+    }
+    25%{
+        top: 16px;
+        left: 264px;
+        transform: scale(1.40);
+    }
+    75%{
+        top: 36px;
+        transform: rotate(20deg);
+        left: 296px; 
+    }
+    100%{
+        top: 19px;
+        left: 298px;
+    }
+}
+#min{
+    position: absolute;
+    top: 159px;
+    left: 271px;
+    height: 123px;
+    animation: m cubic-bezier(0.83, 1.13, 0.37, 0.21) infinite 7s;
+
+}
+@keyframes m {
+    0%{
+        top: 159px;
+        left: 271px;
+    }
+    25%{
+        top: 165px;
+        left: 330px;
+        transform: scale(1.40);
+    }
+    75%{
+        top: 180px;
+        left: 306px; 
+        transform: rotate(-20deg);
+    }
+    100%{
+        top: 159px;
+        left: 271px;
+    }
+}
+#into{
+    position: absolute;
+    top: 277px;
+    left: 277px;
+    height: 218px;
+    animation: i cubic-bezier(0.83, 1.13, 0.37, 0.21) infinite 7s;
+
+}
+@keyframes i {
+    0%{
+        top: 277px;
+        left: 277px;
+    }
+    25%{
+        top: 330px;
+        left: 380px;
+        transform: scale(1.10);
+    }
+    75%{
+        top: 300px;
+        left: 306px; 
+        transform: rotate(-80deg);
+    }
+    100%{
+        top: 277px;
+        left: 277px;
+    }
+}
+#div{
+    position: absolute;
+    top: -31px;
+    left: 695px;
+    height: 149px;
+    transform: rotate(315deg);
+    animation: d cubic-bezier(0.83, 1.13, 0.37, 0.21) infinite 10s;
+
+}
+@keyframes d {
+    0%{
+        top: -31px;
+        left: 695px;
+    }
+    25%{
+        top: 31px;
+        left: 655px;
+        transform: scale(1.40);
+    }
+    75%{
+        top: 60px;
+        left: 689px; 
+        transform: rotate(-20deg);
+    }
+    75%{
+        top: -31px;
+        left: 695px;
+    }
+}
+#bg-dis{
+    position: absolute;
+    bottom: -23%;
+    right: 16%;
+    filter: invert(1);
+}
+.calculator-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row-reverse;
+    height: 100vh;
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.calculator-dising{
+    height: 406px;
+    width: 301px;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    border-radius: 15px;
+    box-shadow:21px 17px 5px -3px #0000001f;
+}
+.calculator-dising #ans-div{
+    height: 88px;
+    width: 267px;
+    background-color: #fafafaf5;
+    margin: 5px;
+    border-radius:10px;
+    outline: 0.89px solid #303030;
+    animation: box 1s linear infinite forwards;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+
+}
+.calculator-dising #ans-div .mine-ans{
+   font-size: 50px;
+   position: relative;
+   left: -10px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+tbody input{
+    height: 60px;
+    width: 60px;
+    background-color: #353535c2;
+    margin: 4px;
+    font-size: 20px;
+    border-radius: 7px;
+    color: #fff;
+    box-shadow: 0px 0px 0px 0.9px #00000034;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    
+    
+}
+input:active{
+    background-color: #2f2f2f;
+}
+
+td{
+    text-align: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
